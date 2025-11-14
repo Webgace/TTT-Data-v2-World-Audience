@@ -3,7 +3,7 @@
 
 MIT License
 
-Copyright (c) 2023 TIIBS, LDA
+Copyright (c) 2025 TIIBS, LDA
 www.tiibstechnology.com
 info@tiibstechnology.com
 
