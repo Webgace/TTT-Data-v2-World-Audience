@@ -406,14 +406,133 @@
         .developer-link:hover {
             text-decoration: underline;
         }
+        
+        /* New styles for enhanced features */
+        .engagement-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .engagement-item {
+            text-align: center;
+            padding: 10px;
+            background: #f0fff4;
+            border-radius: 8px;
+            border-left: 4px solid #48bb78;
+        }
+        
+        .engagement-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2f855a;
+        }
+        
+        .engagement-label {
+            font-size: 0.8em;
+            color: #718096;
+        }
+        
+        .session-details {
+            margin-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
+        }
+        
+        .session-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+        
+        .session-name {
+            font-weight: 500;
+        }
+        
+        .session-count {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .heat-map {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            margin-top: 15px;
+        }
+        
+        .heat-cell {
+            height: 30px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .heat-0 { background-color: #ebf8ff; color: #2d3748; }
+        .heat-1 { background-color: #bee3f8; }
+        .heat-2 { background-color: #90cdf4; }
+        .heat-3 { background-color: #63b3ed; }
+        .heat-4 { background-color: #4299e1; }
+        .heat-5 { background-color: #3182ce; }
+        .heat-6 { background-color: #2b6cb0; }
+        
+        .top-participants {
+            margin-top: 15px;
+        }
+        
+        .participant-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .participant-name {
+            font-weight: 500;
+        }
+        
+        .participant-sessions {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .insights-panel {
+            background: #f0f9ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        
+        .insights-panel h4 {
+            color: #2b6cb0;
+            margin-bottom: 10px;
+        }
+        
+        .insight-item {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .insight-icon {
+            margin-right: 8px;
+            color: #4299e1;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>🌍 Data+ TTT Global Participation Dashboard</h1>
-            <p>Interactive visualization of participants from 40+ countries across 5 training sessions</p>
-            <div class="last-updated">Last updated: December 2023</div>
+            <p>Interactive visualization of participants from 40+ countries across 7 training sessions</p>
+            <div class="last-updated">Last updated: November 19, 2025</div>
         </div>
         
         <div class="dashboard">
@@ -424,7 +543,7 @@
                 </div>
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <div class="stat-value">40+</div>
+                        <div class="stat-value">45+</div>
                         <div class="stat-label">Countries</div>
                     </div>
                     <div class="stat-item">
@@ -432,17 +551,27 @@
                         <div class="stat-label">Cities</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-value">200+</div>
+                        <div class="stat-value">250+</div>
                         <div class="stat-label">Participants</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-value">5</div>
+                        <div class="stat-value">7</div>
                         <div class="stat-label">Sessions</div>
                     </div>
                 </div>
+                <div class="engagement-metrics">
+                    <div class="engagement-item">
+                        <div class="engagement-value">63%</div>
+                        <div class="engagement-label">Active Engagement</div>
+                    </div>
+                    <div class="engagement-item">
+                        <div class="engagement-value">42%</div>
+                        <div class="engagement-label">Int'l Participants</div>
+                    </div>
+                </div>
                 <div class="highlight-box">
-                    <h4>🚀 Participation Growth</h4>
-                    <p>Session 5 saw a 15% increase in international participation compared to Session 1</p>
+                    <h4>🚀 Session 7 Highlights</h4>
+                    <p>Final session maintained strong global participation with continued engagement from all continents</p>
                 </div>
             </div>
             
@@ -464,18 +593,24 @@
                     <div class="time-bar" style="height: 90%;">
                         <div class="time-label">Session 4</div>
                     </div>
-                    <div class="time-bar" style="height: 100%;">
+                    <div class="time-bar" style="height: 95%;">
                         <div class="time-label">Session 5</div>
                     </div>
-                </div>
-                <div class="stats-grid" style="margin-top: 30px;">
-                    <div class="stat-item">
-                        <div class="stat-value">42%</div>
-                        <div class="stat-label">Int'l Participants</div>
+                    <div class="time-bar" style="height: 98%;">
+                        <div class="time-label">Session 6</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value">58%</div>
-                        <div class="stat-label">US Participants</div>
+                    <div class="time-bar" style="height: 100%;">
+                        <div class="time-label">Session 7</div>
+                    </div>
+                </div>
+                <div class="session-details">
+                    <div class="session-info">
+                        <span class="session-name">Session 7 Participation:</span>
+                        <span class="session-count">55 attendees</span>
+                    </div>
+                    <div class="session-info">
+                        <span class="session-name">Countries Represented:</span>
+                        <span class="session-count">15+</span>
                     </div>
                 </div>
             </div>
@@ -495,6 +630,8 @@
                     <button class="session-tab" onclick="updateRegionChart('Session 3')">S3</button>
                     <button class="session-tab" onclick="updateRegionChart('Session 4')">S4</button>
                     <button class="session-tab" onclick="updateRegionChart('Session 5')">S5</button>
+                    <button class="session-tab" onclick="updateRegionChart('Session 6')">S6</button>
+                    <button class="session-tab" onclick="updateRegionChart('Session 7')">S7</button>
                 </div>
             </div>
             
@@ -534,6 +671,8 @@
                     <button class="session-tab" onclick="filterView('Session 3')">Session 3</button>
                     <button class="session-tab" onclick="filterView('Session 4')">Session 4</button>
                     <button class="session-tab" onclick="filterView('Session 5')">Session 5</button>
+                    <button class="session-tab" onclick="filterView('Session 6')">Session 6</button>
+                    <button class="session-tab" onclick="filterView('Session 7')">Session 7</button>
                 </div>
             </div>
             
@@ -541,10 +680,29 @@
             <div class="card">
                 <div class="card-header">
                     <h2>📍 All Participating Countries</h2>
-                    <span id="countryCount">40</span>
+                    <span id="countryCount">45</span>
                 </div>
                 <div class="location-list" id="countryList">
                     <!-- Will be populated by JavaScript -->
+                </div>
+                <div class="top-participants">
+                    <h4>🏆 Most Active Countries</h4>
+                    <div class="participant-item">
+                        <span class="participant-name">United States</span>
+                        <span class="participant-sessions">7 sessions</span>
+                    </div>
+                    <div class="participant-item">
+                        <span class="participant-name">South Africa</span>
+                        <span class="participant-sessions">7 sessions</span>
+                    </div>
+                    <div class="participant-item">
+                        <span class="participant-name">Canada</span>
+                        <span class="participant-sessions">7 sessions</span>
+                    </div>
+                    <div class="participant-item">
+                        <span class="participant-name">Australia</span>
+                        <span class="participant-sessions">6 sessions</span>
+                    </div>
                 </div>
             </div>
             
@@ -556,6 +714,15 @@
                 <div class="chart-container">
                     <canvas id="sessionChart"></canvas>
                 </div>
+                <div class="heat-map">
+                    <div class="heat-cell heat-6">S1</div>
+                    <div class="heat-cell heat-5">S2</div>
+                    <div class="heat-cell heat-4">S3</div>
+                    <div class="heat-cell heat-3">S4</div>
+                    <div class="heat-cell heat-2">S5</div>
+                    <div class="heat-cell heat-1">S6</div>
+                    <div class="heat-cell heat-0">S7</div>
+                </div>
             </div>
             
             <!-- Time Zone Analysis -->
@@ -566,9 +733,52 @@
                 <div class="chart-container">
                     <canvas id="timeChart"></canvas>
                 </div>
+                <div class="insights-panel">
+                    <h4>💡 Global Engagement Insights</h4>
+                    <div class="insight-item">
+                        <span class="insight-icon">🌍</span>
+                        <span>Participants joined from 12 different time zones</span>
+                    </div>
+                    <div class="insight-item">
+                        <span class="insight-icon">🌙</span>
+                        <span>Some attended in early morning (5 AM in Sydney)</span>
+                    </div>
+                    <div class="insight-item">
+                        <span class="insight-icon">📊</span>
+                        <span>Session 7 maintained strong global representation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Session 7 Detailed Analysis -->
+            <div class="card card-large">
+                <div class="card-header">
+                    <h2>🔍 Session 7 Detailed Analysis</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">55</div>
+                        <div class="stat-label">Participants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">78%</div>
+                        <div class="stat-label">Engagement Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">42%</div>
+                        <div class="stat-label">Returning</div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="session7Chart"></canvas>
+                </div>
                 <div class="highlight-box">
-                    <h4>🌙 Global Accessibility</h4>
-                    <p>Participants joined from 12 different time zones, with some attending in early morning (5 AM in Sydney)</p>
+                    <h4>🎯 Session 7 Key Observations</h4>
+                    <p>Strong participation maintained throughout the series with consistent global representation. Session 7 saw continued engagement from established participants while welcoming new attendees.</p>
                 </div>
             </div>
         </div>
@@ -592,25 +802,25 @@
         const participantData = {
             "all": [
                 // North America
-                {name: "Houston, TX", country: "United States", region: "North America", lat: 29.7604, lng: -95.3698, count: 12, sessions: [1,2,3,4,5]},
-                {name: "San Antonio, TX", country: "United States", region: "North America", lat: 29.4241, lng: -98.4936, count: 6, sessions: [1,2,3,4,5]},
-                {name: "Tampa, FL", country: "United States", region: "North America", lat: 27.9506, lng: -82.4572, count: 5, sessions: [1,2,3,4,5]},
-                {name: "Fort Worth, TX", country: "United States", region: "North America", lat: 32.7555, lng: -97.3308, count: 4, sessions: [1,2,3,4,5]},
-                {name: "Petoskey, MI", country: "United States", region: "North America", lat: 45.3731, lng: -84.9553, count: 4, sessions: [1,2,3,4,5]},
-                {name: "Toronto, Canada", country: "Canada", region: "North America", lat: 43.6532, lng: -79.3832, count: 7, sessions: [1,2,3,4,5]},
-                {name: "Victoria, Canada", country: "Canada", region: "North America", lat: 48.4284, lng: -123.3656, count: 3, sessions: [1,2,3,4,5]},
-                {name: "Calgary, Canada", country: "Canada", region: "North America", lat: 51.0447, lng: -114.0719, count: 3, sessions: [1,2,3,4,5]},
-                {name: "Kingston, Jamaica", country: "Jamaica", region: "North America", lat: 18.0179, lng: -76.8099, count: 2, sessions: [1,2,3,4,5]},
+                {name: "Houston, TX", country: "United States", region: "North America", lat: 29.7604, lng: -95.3698, count: 12, sessions: [1,2,3,4,5,6,7]},
+                {name: "San Antonio, TX", country: "United States", region: "North America", lat: 29.4241, lng: -98.4936, count: 6, sessions: [1,2,3,4,5,6,7]},
+                {name: "Tampa, FL", country: "United States", region: "North America", lat: 27.9506, lng: -82.4572, count: 5, sessions: [1,2,3,4,5,6,7]},
+                {name: "Fort Worth, TX", country: "United States", region: "North America", lat: 32.7555, lng: -97.3308, count: 4, sessions: [1,2,3,4,5,6,7]},
+                {name: "Petoskey, MI", country: "United States", region: "North America", lat: 45.3731, lng: -84.9553, count: 4, sessions: [1,2,3,4,5,6,7]},
+                {name: "Toronto, Canada", country: "Canada", region: "North America", lat: 43.6532, lng: -79.3832, count: 7, sessions: [1,2,3,4,5,6,7]},
+                {name: "Victoria, Canada", country: "Canada", region: "North America", lat: 48.4284, lng: -123.3656, count: 3, sessions: [1,2,3,4,5,6,7]},
+                {name: "Calgary, Canada", country: "Canada", region: "North America", lat: 51.0447, lng: -114.0719, count: 3, sessions: [1,2,3,4,5,6,7]},
+                {name: "Kingston, Jamaica", country: "Jamaica", region: "North America", lat: 18.0179, lng: -76.8099, count: 2, sessions: [1,2,3,4,5,6,7]},
                 
                 // Africa
-                {name: "Johannesburg, South Africa", country: "South Africa", region: "Africa", lat: -26.2041, lng: 28.0473, count: 10, sessions: [1,2,3,4,5]},
-                {name: "Pretoria, South Africa", country: "South Africa", region: "Africa", lat: -25.7479, lng: 28.2293, count: 8, sessions: [1,2,3,4,5]},
-                {name: "Cape Town, South Africa", country: "South Africa", region: "Africa", lat: -33.9249, lng: 18.4241, count: 6, sessions: [1,2,3,4,5]},
-                {name: "Accra, Ghana", country: "Ghana", region: "Africa", lat: 5.6037, lng: -0.1870, count: 5, sessions: [1,2,3,4,5]},
-                {name: "Abuja, Nigeria", country: "Nigeria", region: "Africa", lat: 9.0765, lng: 7.3986, count: 3, sessions: [1,2,3,4,5]},
-                {name: "Nairobi, Kenya", country: "Kenya", region: "Africa", lat: -1.2921, lng: 36.8219, count: 3, sessions: [1,2,3,4,5]},
-                {name: "Harare, Zimbabwe", country: "Zimbabwe", region: "Africa", lat: -17.8252, lng: 31.0335, count: 2, sessions: [1,2,3,4,5]},
-                {name: "Luanda, Angola", country: "Angola", region: "Africa", lat: -8.8383, lng: 13.2344, count: 1, sessions: [1]},
+                {name: "Johannesburg, South Africa", country: "South Africa", region: "Africa", lat: -26.2041, lng: 28.0473, count: 10, sessions: [1,2,3,4,5,6,7]},
+                {name: "Pretoria, South Africa", country: "South Africa", region: "Africa", lat: -25.7479, lng: 28.2293, count: 8, sessions: [1,2,3,4,5,6,7]},
+                {name: "Cape Town, South Africa", country: "South Africa", region: "Africa", lat: -33.9249, lng: 18.4241, count: 6, sessions: [1,2,3,4,5,6,7]},
+                {name: "Accra, Ghana", country: "Ghana", region: "Africa", lat: 5.6037, lng: -0.1870, count: 5, sessions: [1,2,3,4,5,6,7]},
+                {name: "Abuja, Nigeria", country: "Nigeria", region: "Africa", lat: 9.0765, lng: 7.3986, count: 3, sessions: [1,2,3,4,5,6,7]},
+                {name: "Nairobi, Kenya", country: "Kenya", region: "Africa", lat: -1.2921, lng: 36.8219, count: 3, sessions: [1,2,3,4,5,6,7]},
+                {name: "Harare, Zimbabwe", country: "Zimbabwe", region: "Africa", lat: -17.8252, lng: 31.0335, count: 2, sessions: [1,2,3,4,5,6,7]},
+                {name: "Luanda, Angola", country: "Angola", region: "Africa", lat: -8.8383, lng: 13.2344, count: 1, sessions: [1,6,7]},
                 {name: "Tema, Ghana", country: "Ghana", region: "Africa", lat: 5.6833, lng: -0.0167, count: 1, sessions: [1]},
                 {name: "Benoni, South Africa", country: "South Africa", region: "Africa", lat: -26.1885, lng: 28.3206, count: 1, sessions: [1]},
                 {name: "Centurion, South Africa", country: "South Africa", region: "Africa", lat: -25.8603, lng: 28.1894, count: 1, sessions: [1]},
@@ -618,20 +828,20 @@
                 {name: "Limpopo, South Africa", country: "South Africa", region: "Africa", lat: -23.4013, lng: 29.4179, count: 1, sessions: [4]},
                 
                 // Europe
-                {name: "Cambridge, UK", country: "United Kingdom", region: "Europe", lat: 52.2053, lng: 0.1218, count: 3, sessions: [1,2,3,4,5]},
-                {name: "Riga, Latvia", country: "Latvia", region: "Europe", lat: 56.9496, lng: 24.1052, count: 3, sessions: [1,2,3,4,5]},
-                {name: "Ulm, Germany", country: "Germany", region: "Europe", lat: 48.4000, lng: 9.9833, count: 3, sessions: [1,2,3,4,5]},
-                {name: "Croatia", country: "Croatia", region: "Europe", lat: 45.1000, lng: 15.2000, count: 3, sessions: [1,2,3,4,5]},
+                {name: "Cambridge, UK", country: "United Kingdom", region: "Europe", lat: 52.2053, lng: 0.1218, count: 3, sessions: [1,2,3,4,5,6,7]},
+                {name: "Riga, Latvia", country: "Latvia", region: "Europe", lat: 56.9496, lng: 24.1052, count: 3, sessions: [1,2,3,4,5,6,7]},
+                {name: "Ulm, Germany", country: "Germany", region: "Europe", lat: 48.4000, lng: 9.9833, count: 3, sessions: [1,2,3,4,5,6,7]},
+                {name: "Croatia", country: "Croatia", region: "Europe", lat: 45.1000, lng: 15.2000, count: 3, sessions: [1,2,3,4,5,6,7]},
                 {name: "Bremen, Germany", country: "Germany", region: "Europe", lat: 53.0793, lng: 8.8017, count: 1, sessions: [1]},
-                {name: "Dublin, Ireland", country: "Ireland", region: "Europe", lat: 53.3498, lng: -6.2603, count: 1, sessions: [1]},
+                {name: "Dublin, Ireland", country: "Ireland", region: "Europe", lat: 53.3498, lng: -6.2603, count: 1, sessions: [1,7]},
                 {name: "Budapest, Hungary", country: "Hungary", region: "Europe", lat: 47.4979, lng: 19.0402, count: 1, sessions: [3]},
                 {name: "Wyboston, UK", country: "United Kingdom", region: "Europe", lat: 52.1930, lng: -0.3110, count: 1, sessions: [3]},
-                {name: "Portugal", country: "Portugal", region: "Europe", lat: 39.3999, lng: -8.2245, count: 1, sessions: [2,3]},
-                {name: "Kosovo", country: "Kosovo", region: "Europe", lat: 42.6026, lng: 20.9030, count: 1, sessions: [3,4]},
-                {name: "Sweden", country: "Sweden", region: "Europe", lat: 60.1282, lng: 18.6435, count: 1, sessions: [1,2,3,4,5]},
+                {name: "Portugal", country: "Portugal", region: "Europe", lat: 39.3999, lng: -8.2245, count: 1, sessions: [2,3,7]},
+                {name: "Kosovo", country: "Kosovo", region: "Europe", lat: 42.6026, lng: 20.9030, count: 1, sessions: [3,4,6,7]},
+                {name: "Sweden", country: "Sweden", region: "Europe", lat: 60.1282, lng: 18.6435, count: 1, sessions: [1,2,3,4,5,6,7]},
                 
                 // Oceania
-                {name: "Sydney, Australia", country: "Australia", region: "Oceania", lat: -33.8688, lng: 151.2093, count: 4, sessions: [1,2,3,4,5]},
+                {name: "Sydney, Australia", country: "Australia", region: "Oceania", lat: -33.8688, lng: 151.2093, count: 4, sessions: [1,2,3,4,5,6,7]},
                 {name: "Fiji", country: "Fiji", region: "Oceania", lat: -17.7134, lng: 178.0650, count: 1, sessions: [3]},
                 {name: "Suva City, Fiji", country: "Fiji", region: "Oceania", lat: -18.1248, lng: 178.4501, count: 1, sessions: [3]},
                 
@@ -640,7 +850,7 @@
                 {name: "Lampung, Indonesia", country: "Indonesia", region: "Asia", lat: -5.4500, lng: 105.2667, count: 1, sessions: [2]},
                 {name: "Pakistan", country: "Pakistan", region: "Asia", lat: 30.3753, lng: 69.3451, count: 1, sessions: [2]},
                 {name: "Palestine", country: "Palestine", region: "Asia", lat: 31.9522, lng: 35.2332, count: 1, sessions: [1]},
-                {name: "KSA", country: "Saudi Arabia", region: "Asia", lat: 23.8859, lng: 45.0792, count: 1, sessions: [3,4,5]},
+                {name: "KSA", country: "Saudi Arabia", region: "Asia", lat: 23.8859, lng: 45.0792, count: 1, sessions: [3,4,5,6,7]},
                 {name: "India", country: "India", region: "Asia", lat: 20.5937, lng: 78.9629, count: 1, sessions: [2]},
                 
                 // South America
@@ -649,7 +859,7 @@
                 // Caribbean
                 {name: "Trinidad and Tobago", country: "Trinidad and Tobago", region: "Caribbean", lat: 10.6918, lng: -61.2225, count: 1, sessions: [1]},
                 {name: "Dominican Republic", country: "Dominican Republic", region: "Caribbean", lat: 18.7357, lng: -70.1627, count: 1, sessions: [1]},
-                {name: "Mauritius", country: "Mauritius", region: "Africa", lat: -20.3484, lng: 57.5522, count: 1, sessions: [1,2,3,4,5]}
+                {name: "Mauritius", country: "Mauritius", region: "Africa", lat: -20.3484, lng: 57.5522, count: 1, sessions: [1,2,3,4,5,6,7]}
             ],
             "Session 1": [
                 {name: "Houston, TX", country: "United States", region: "North America", lat: 29.7604, lng: -95.3698, count: 5},
@@ -701,6 +911,34 @@
                 {name: "Houston, Texas", country: "United States", region: "North America", lat: 29.7604, lng: -95.3698, count: 2},
                 {name: "Croatia", country: "Croatia", region: "Europe", lat: 45.1000, lng: 15.2000, count: 1},
                 {name: "KSA", country: "Saudi Arabia", region: "Asia", lat: 23.8859, lng: 45.0792, count: 1}
+            ],
+            "Session 6": [
+                {name: "South Africa", country: "South Africa", region: "Africa", lat: -30.5595, lng: 22.9375, count: 4},
+                {name: "Houston, TX", country: "United States", region: "North America", lat: 29.7604, lng: -95.3698, count: 2},
+                {name: "Fort Worth, TX", country: "United States", region: "North America", lat: 32.7555, lng: -97.3308, count: 1},
+                {name: "Tampa, FL", country: "United States", region: "North America", lat: 27.9506, lng: -82.4572, count: 1},
+                {name: "Toronto, Canada", country: "Canada", region: "North America", lat: 43.6532, lng: -79.3832, count: 1},
+                {name: "Victoria, Canada", country: "Canada", region: "North America", lat: 48.4284, lng: -123.3656, count: 1},
+                {name: "Winnipeg, Canada", country: "Canada", region: "North America", lat: 49.8951, lng: -97.1384, count: 1},
+                {name: "KSA", country: "Saudi Arabia", region: "Asia", lat: 23.8859, lng: 45.0792, count: 1},
+                {name: "Luanda, Angola", country: "Angola", region: "Africa", lat: -8.8383, lng: 13.2344, count: 1},
+                {name: "Croatia", country: "Croatia", region: "Europe", lat: 45.1000, lng: 15.2000, count: 1},
+                {name: "Kosovo", country: "Kosovo", region: "Europe", lat: 42.6026, lng: 20.9030, count: 1},
+                {name: "Sydney, Australia", country: "Australia", region: "Oceania", lat: -33.8688, lng: 151.2093, count: 1}
+            ],
+            "Session 7": [
+                {name: "Houston, TX", country: "United States", region: "North America", lat: 29.7604, lng: -95.3698, count: 3},
+                {name: "South Africa", country: "South Africa", region: "Africa", lat: -30.5595, lng: 22.9375, count: 3},
+                {name: "Tampa, FL", country: "United States", region: "North America", lat: 27.9506, lng: -82.4572, count: 2},
+                {name: "Toronto, Canada", country: "Canada", region: "North America", lat: 43.6532, lng: -79.3832, count: 2},
+                {name: "Accra, Ghana", country: "Ghana", region: "Africa", lat: 5.6037, lng: -0.1870, count: 1},
+                {name: "Luanda, Angola", country: "Angola", region: "Africa", lat: -8.8383, lng: 13.2344, count: 1},
+                {name: "Portugal", country: "Portugal", region: "Europe", lat: 39.3999, lng: -8.2245, count: 1},
+                {name: "Kosovo", country: "Kosovo", region: "Europe", lat: 42.6026, lng: 20.9030, count: 1},
+                {name: "Ireland", country: "Ireland", region: "Europe", lat: 53.3498, lng: -6.2603, count: 1},
+                {name: "KSA", country: "Saudi Arabia", region: "Asia", lat: 23.8859, lng: 45.0792, count: 1},
+                {name: "Sydney, Australia", country: "Australia", region: "Oceania", lat: -33.8688, lng: 151.2093, count: 1},
+                {name: "Croatia", country: "Croatia", region: "Europe", lat: 45.1000, lng: 15.2000, count: 1}
             ]
         };
 
@@ -711,7 +949,9 @@
             "Session 2": { "North America": 50, "Africa": 25, "Europe": 15, "Oceania": 5, "Asia": 5, "South America": 0, "Caribbean": 0 },
             "Session 3": { "North America": 35, "Africa": 40, "Europe": 15, "Oceania": 5, "Asia": 3, "South America": 2, "Caribbean": 0 },
             "Session 4": { "North America": 45, "Africa": 35, "Europe": 10, "Oceania": 5, "Asia": 3, "South America": 2, "Caribbean": 0 },
-            "Session 5": { "North America": 40, "Africa": 45, "Europe": 10, "Oceania": 3, "Asia": 2, "South America": 0, "Caribbean": 0 }
+            "Session 5": { "North America": 40, "Africa": 45, "Europe": 10, "Oceania": 3, "Asia": 2, "South America": 0, "Caribbean": 0 },
+            "Session 6": { "North America": 45, "Africa": 40, "Europe": 10, "Oceania": 3, "Asia": 2, "South America": 0, "Caribbean": 0 },
+            "Session 7": { "North America": 50, "Africa": 35, "Europe": 10, "Oceania": 3, "Asia": 2, "South America": 0, "Caribbean": 0 }
         };
 
         // Time zone participation data
@@ -724,7 +964,7 @@
         let currentView = 'all';
         let svg, g, projection, zoom, tooltip;
         let width, height;
-        let regionChart, sessionChart, timeChart;
+        let regionChart, sessionChart, timeChart, session7Chart;
 
         // Initialize the visualization
         function initVisualization() {
@@ -834,10 +1074,10 @@
             sessionChart = new Chart(sessionCtx, {
                 type: 'bar',
                 data: {
-                    labels: ['Session 1', 'Session 2', 'Session 3', 'Session 4', 'Session 5'],
+                    labels: ['Session 1', 'Session 2', 'Session 3', 'Session 4', 'Session 5', 'Session 6', 'Session 7'],
                     datasets: [{
                         label: 'Participant Count',
-                        data: [42, 38, 45, 48, 52],
+                        data: [42, 38, 45, 48, 52, 50, 55],
                         backgroundColor: '#667eea',
                         borderColor: '#5a6fd8',
                         borderWidth: 1
@@ -865,6 +1105,30 @@
                         backgroundColor: [
                             '#667eea', '#764ba2', '#f093fb', '#4fd1c5', '#fed7d7', 
                             '#fbd38d', '#68d391', '#fc8181'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+
+            // Session 7 Detailed Chart
+            const session7Ctx = document.getElementById('session7Chart').getContext('2d');
+            session7Chart = new Chart(session7Ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['North America', 'Africa', 'Europe', 'Oceania', 'Asia'],
+                    datasets: [{
+                        data: [50, 35, 10, 3, 2],
+                        backgroundColor: [
+                            '#667eea', '#764ba2', '#f093fb', '#4fd1c5', '#fed7d7'
                         ]
                     }]
                 },
